@@ -4,8 +4,12 @@ import './textInput.dart';
 
 class AddPlace extends StatefulWidget {
   final Function pressHandler;
+  final myController;
 
-  AddPlace(this.pressHandler);
+  AddPlace(
+    this.pressHandler,
+    this.myController,
+  );
 
   @override
   _AddPlaceState createState() => _AddPlaceState();
@@ -19,7 +23,7 @@ class _AddPlaceState extends State<AddPlace> {
       margin: EdgeInsets.all(10),
       child: Column(
         children: [
-          TextInput(),
+          TextInput(widget.myController),
           RaisedButton(
               color: Colors.blue,
               textColor: Colors.white,
