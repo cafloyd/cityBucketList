@@ -13,8 +13,17 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  String newPlace;
+  final myController = TextEditingController();
+
   pressHandler() {
-    print('You have added a place!');
+    newPlace = myController.text;
+  }
+
+  @override
+  void dispose() {
+    myController.dispose();
+    super.dispose();
   }
 
   @override
@@ -34,7 +43,7 @@ class _MyAppState extends State<MyApp> {
           body: TabBarView(
             children: [
               Map(),
-              AddPlace(pressHandler),
+              AddPlace(pressHandler, myController),
             ],
           )),
     ));
