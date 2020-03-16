@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import './map.dart';
 import './places.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -15,11 +14,15 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String newPlace;
-  List<String> placeListArray = ['place 1', 'place 2', 'place 3'];
+  List<String> placeListArray = [];
   final myController = TextEditingController();
 
   pressHandler() {
     newPlace = myController.text;
+    setState(() {
+      placeListArray.add(newPlace);
+      myController.text = '';
+    });
   }
 
   @override
