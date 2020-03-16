@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import './map.dart';
-import './addPlace.dart';
+import './places.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -14,6 +15,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String newPlace;
+  List<String> placeListArray = ['place 1', 'place 2', 'place 3'];
   final myController = TextEditingController();
 
   pressHandler() {
@@ -43,7 +45,7 @@ class _MyAppState extends State<MyApp> {
           body: TabBarView(
             children: [
               Map(),
-              AddPlace(pressHandler, myController),
+              Places(pressHandler, myController, newPlace, placeListArray),
             ],
           )),
     ));

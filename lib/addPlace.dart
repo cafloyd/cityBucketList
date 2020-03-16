@@ -27,7 +27,7 @@ class _AddPlaceState extends State<AddPlace> {
           RaisedButton(
               color: Colors.blue,
               textColor: Colors.white,
-              child: Text('Buck-it!'),
+              child: Text('Add new place!'),
               onPressed: widget.pressHandler)
         ],
       ),
