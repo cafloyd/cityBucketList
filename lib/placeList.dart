@@ -24,7 +24,7 @@ class _PlaceListState extends State<PlaceList> {
         child: Column(
           children: [
             Text(
-              'Your Bucket List',
+              'Your Sites',
               style: TextStyle(fontSize: 25),
             ),
             ...widget.placeListArray.map((place) {

@@ -38,7 +38,7 @@ class _MyAppState extends State<MyApp> {
       length: 2,
       child: Scaffold(
           appBar: AppBar(
-              title: Text('About Town'),
+              title: Text('City Sites'),
               bottom: TabBar(
                 tabs: [
                   Tab(icon: Icon(Icons.map)),
