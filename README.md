@@ -1,16 +1,11 @@
-# stackathon
+# City Sites
 
-A new Flutter project.
+A mobile application allowing users to create city-specific bucket lists.
 
-## Getting Started
+## Built With
 
-This project is a starting point for a Flutter application.
+- [Flutter](https://flutter.dev/docs)
 
-A few resources to get you started if this is your first Flutter project:
+## License
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
