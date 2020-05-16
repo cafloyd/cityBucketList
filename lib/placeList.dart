@@ -28,7 +28,7 @@ class _PlaceListState extends State<PlaceList> {
               style: TextStyle(fontSize: 25),
             ),
             ...widget.placeListArray.map((place) {
-              return IndividPlace(place);
+              return IndividualPlace(place);
             })
           ],
         ));

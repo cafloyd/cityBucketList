@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class IndividPlace extends StatelessWidget {
+class IndividualPlace extends StatelessWidget {
   final String place;
 
-  IndividPlace(
+  IndividualPlace(
     this.place,
   );
 
